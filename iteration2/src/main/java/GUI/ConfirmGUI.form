@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.ConfirmGUI">
+  <grid id="27dc6" binding="confirmPanel" layout-manager="GridLayoutManager" row-count="13" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="130" y="20" width="894" height="591"/>
+    </constraints>
+    <properties>
+      <background color="-721665"/>
+      <foreground color="-15132391"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="e89e" class="javax.swing.JLabel" binding="soupLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Soup"/>
+        </properties>
+      </component>
+      <component id="6be52" class="javax.swing.JLabel" binding="NoodleLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Noodles"/>
+        </properties>
+      </component>
+      <component id="bf18" class="javax.swing.JLabel" binding="onionLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Spring onion"/>
+        </properties>
+      </component>
+      <component id="1fe84" class="javax.swing.JLabel" binding="spicinessLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Spiciness"/>
+        </properties>
+      </component>
+      <component id="2b31e" class="javax.swing.JLabel" binding="extraNoriLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <enabled value="true"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Extra Nori"/>
+        </properties>
+      </component>
+      <component id="420eb" class="javax.swing.JLabel" binding="bambooLabel">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Bamboo shoots"/>
+        </properties>
+      </component>
+      <component id="a5116" class="javax.swing.JLabel" binding="noriLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Nori"/>
+        </properties>
+      </component>
+      <component id="53c11" class="javax.swing.JLabel" binding="chashuLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Chashu"/>
+        </properties>
+      </component>
+      <component id="1906a" class="javax.swing.JLabel" binding="eggLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Boiled egg"/>
+        </properties>
+      </component>
+      <component id="34981" class="javax.swing.JLabel" binding="extraEggLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Extra boiled egg"/>
+        </properties>
+      </component>
+      <component id="c9867" class="javax.swing.JTextField" binding="soupChoice" custom-create="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="950f2" class="javax.swing.JLabel" binding="fixedLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+          <text value="Fixed Items"/>
+        </properties>
+      </component>
+      <component id="3fc56" class="javax.swing.JLabel" binding="extraLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+          <text value="Add-ons"/>
+        </properties>
+      </component>
+      <component id="8499b" class="javax.swing.JLabel" binding="extraChasuLabel">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Extra Chashu"/>
+        </properties>
+      </component>
+      <component id="78d8b" class="javax.swing.JLabel" binding="diningLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+          <text value="Dining Option"/>
+        </properties>
+      </component>
+      <component id="72c56" class="javax.swing.JButton" binding="paymentButton">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1642256"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Payment"/>
+        </properties>
+      </component>
+      <component id="aaa86" class="javax.swing.JTextField" binding="noodleChoice" custom-create="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="37988" class="javax.swing.JTextField" binding="onionChoice" custom-create="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="5497f" class="javax.swing.JTextField" binding="noriChoice" custom-create="true">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="f3d52" class="javax.swing.JTextField" binding="chashuChoice" custom-create="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="8c453" class="javax.swing.JTextField" binding="eggChoice" custom-create="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="ce2b4" class="javax.swing.JTextField" binding="spicinessChoice" custom-create="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="dab58" class="javax.swing.JTextField" binding="extraNori" custom-create="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="410f" class="javax.swing.JTextField" binding="diningChoice" custom-create="true">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="b3a54" class="javax.swing.JTextField" binding="extraEgg" custom-create="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="3829b" class="javax.swing.JTextField" binding="bambooChoice" custom-create="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="bcce6" class="javax.swing.JTextField" binding="extraChashu" custom-create="true">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="5e085" class="javax.swing.JTextField" binding="memberTextField" custom-create="true">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="7b384" class="javax.swing.JTextField" binding="IdTextField" custom-create="true">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="d90b4" class="javax.swing.JLabel" binding="priceLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+          <text value="Price"/>
+        </properties>
+      </component>
+      <component id="88d52" class="javax.swing.JTextField" binding="valueTextField" custom-create="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="f9dd9" class="javax.swing.JButton" binding="cancelButton">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1642256"/>
+          <font size="20" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <component id="64efc" class="javax.swing.JTextField" binding="numTextField" custom-create="true">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="20"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="e0823" class="javax.swing.JTextField" binding="remainingTextField" custom-create="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <editable value="false"/>
+          <font size="22" style="3"/>
+          <foreground color="-15132391"/>
+        </properties>
+      </component>
+      <component id="3d0e0" class="javax.swing.JLabel" binding="confirmLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-721665"/>
+          <font size="28" style="1"/>
+          <foreground color="-15132391"/>
+          <text value="Confirmation"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,23 @@
+
+
+************************************
+Fixed:
+Soup Shoyu
+Noodles Medium
+Spring onion Just a little
+Nori No
+Chashu No
+Boiled egg No
+Spiciness 5
+------------------------------------
+Add-ons:
+Extra Nori 0
+Extra boiled egg 0
+Bamboo shoots 0
+Extra Chashu 0
+------------------------------------
+Dining option: Take-away
+Price: 9.99
+Method of Payment: Credit Card
+Date: 17-04-2020 18:14:53
+************************************
