@@ -1,60 +1,56 @@
 package dao.impl;
 
-import dao.PriceDAO;
-
+import dao.AvailabilityDAO;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.ArrayList;
 
-public class PriceDAOImpl implements PriceDAO {
+public class AvailabilityDAOImpl implements AvailabilityDAO {
 
-    private final String fixedFile = "files/price.csv";
+    private final String fixedFile = "files/availability.csv";
 
     @Override
-    public float getPrices(String name){
+    public boolean getAvailabilities(String name){
         /**
-         * this method is called when getting the price of an option
+         * this method is called when getting the availability of an option
          * @param name name of the option
-         * @author Shucen L
+         * @author Yifang L
          */
-        //String fixedFile = "files/price.csv";
-        float price = 0;
+        boolean availability = false;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fixedFile));
-            reader.readLine(); //first line is the header information
             String line;
+
             while((line = reader.readLine()) != null){
-                //NEED TO REFACTOR(this comment line is add by Yifang L)
-                String[] value = line.split(",");
+                String[] value = line.split(",",2);
                 if (value[0].equals(name))
-                    price = Float.parseFloat(value[1]);
+                    availability = Boolean.parseBoolean(value[1]);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //price = (float) ((double) Math.round(price * 100) / 100);
-        return price;
+        return availability;
     }
 
     @Override
-    public void setPrices( String name, float price) {
+    public void setAvailabilities( String name, boolean availability) {
         /**
-         * this method is called when changing the price of an option
+         * this method is called when changing the availability of an option
          * @author Yifang L
          * @param name name of the option to change
-         * @param price the price you want to set
+         * @param availability the availability status you want to set
          */
         ArrayList<String> optionList = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fixedFile));
             String line;
             while((line=reader.readLine())!=null){
-                //item[0]:the option name, item[1]: the option price
-                String[] item = line.split(",", 2);
-                if (item[0].equals(name)) item[1] = String.valueOf(price);
-                String last = item[0]+","+item[1];
+                //item[0]:the option name, item[1]: the option availability
+                String[] value = line.split(",", 2);
+                if (value[0].equals(name)) value[1] = String.valueOf(availability);
+                String last = value[0]+","+value[1];
                 optionList.add(last);
             }
             BufferedWriter bw_na = new BufferedWriter(new FileWriter(fixedFile, false));
@@ -71,3 +67,4 @@ public class PriceDAOImpl implements PriceDAO {
     }
 
 }
+
