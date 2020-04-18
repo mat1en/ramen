@@ -10,8 +10,10 @@ import java.io.FileReader;
 
 public class PriceDAOImpl implements PriceDAO {
 
+    private String fixedFile = "files/price.csv";
+
     public float getPrices(String name){
-        String fixedFile = "files/price.csv";
+        //String fixedFile = "files/price.csv";
         float price = 0;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fixedFile));
@@ -28,7 +30,6 @@ public class PriceDAOImpl implements PriceDAO {
         //price = (float) ((double) Math.round(price * 100) / 100);
         return price;
     }
-
 
 
 
