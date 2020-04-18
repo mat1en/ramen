@@ -5,6 +5,6 @@ import vo.Fixed;
 
 
 public interface PriceDAO {
-    public float getPrices(String name);
-
+    float getPrices(String name);
+    void setPrices(String name, float price);
 }
