@@ -1,6 +1,5 @@
 package dao.impl;
 
-
 import dao.PriceDAO;
 
 import java.io.BufferedReader;
