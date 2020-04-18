@@ -25,6 +25,11 @@ public class FixedService {
        return Choices;
     }
 
+    public void setPrices(String name, float price){
+       PriceDAO dao =new PriceDAOImpl();
+       dao.setPrices(name, price);
+    }
+
     public float getPrice(String name){
        PriceDAO dao =new PriceDAOImpl();
        return dao.getPrices(name);

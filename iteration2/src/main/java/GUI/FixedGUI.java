@@ -261,16 +261,16 @@ public class FixedGUI {
                 soupChoice = soup;
             }
 
-            String noodels = choices[1];
-            if (noodels.equals(softRadioButton.getText())) {
+            String noodles = choices[1];
+            if (noodles.equals(softRadioButton.getText())) {
                 softRadioButton.setSelected(true);
-                noodleChoice = noodels;
-            } else if (noodels.equals(mediumdRadioButton.getText())) {
+                noodleChoice = noodles;
+            } else if (noodles.equals(mediumdRadioButton.getText())) {
                 mediumdRadioButton.setSelected(true);
-                noodleChoice = noodels;
-            } else if (noodels.equals(firmRadioButton.getText())) {
+                noodleChoice = noodles;
+            } else if (noodles.equals(firmRadioButton.getText())) {
                 firmRadioButton.setSelected(true);
-                noodleChoice = noodels;
+                noodleChoice = noodles;
             }
 
             String onion = choices[2];
