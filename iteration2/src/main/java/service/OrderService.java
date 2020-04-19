@@ -3,6 +3,7 @@ package service;
 import GUI.ConfirmGUI;
 import dao.OrderDAO;
 import dao.impl.OrderDAOImpl;
+import service.StatisticsService;
 
 import java.util.Arrays;
 
@@ -24,8 +25,9 @@ public class OrderService {
         System.arraycopy(choices,0,add,0,choices.length);
         add[add.length-1] = methods;
         OrderDAO dao = new OrderDAOImpl();
+        StatisticsService stat = new StatisticsService();
+        stat.setStatistics(add);
         dao.write2txt(add);
-
     }
 
     public void setMethods(String methods) {

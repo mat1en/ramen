@@ -31,6 +31,7 @@ public class PriceDAOImpl implements PriceDAO {
                 if (value[0].equals(name))
                     price = Float.parseFloat(value[1]);
             }
+            reader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -57,6 +58,7 @@ public class PriceDAOImpl implements PriceDAO {
                 String last = item[0]+","+item[1];
                 optionList.add(last);
             }
+            reader.close();
             BufferedWriter bw_na = new BufferedWriter(new FileWriter(fixedFile, false));
             BufferedWriter bw = new BufferedWriter(new FileWriter(fixedFile, true));
             bw_na.write("");
@@ -64,6 +66,7 @@ public class PriceDAOImpl implements PriceDAO {
                 bw.write(i);
                 bw.newLine();
             }
+            bw_na.close();
             bw.close();
         } catch (Exception e) {
             e.printStackTrace();
