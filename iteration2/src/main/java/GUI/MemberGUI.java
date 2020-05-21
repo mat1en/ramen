@@ -1,14 +1,9 @@
 package GUI;
 
-import com.intellij.uiDesigner.core.GridConstraints;
-import com.intellij.uiDesigner.core.GridLayoutManager;
 import service.MembershipService;
 import service.OrderService;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -22,7 +17,7 @@ public class MemberGUI {
     private JButton registerButton;
     private JButton skipButton;
     private JLabel notLabel;
-    private String mebershipId;
+    private String membershipId;
 
     public MemberGUI(final String[] choices) {
         skipButton.addMouseListener(new MouseAdapter() {
@@ -46,9 +41,9 @@ public class MemberGUI {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                mebershipId = numTextField.getText();
+                membershipId = numTextField.getText();
                 MembershipService member = new MembershipService();
-                member.setMemberId(mebershipId);
+                member.setMemberId(membershipId);
                 boolean flag = false;
                 try {
                     flag = member.checkMermeberId();

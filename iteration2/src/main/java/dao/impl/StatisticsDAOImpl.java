@@ -14,6 +14,9 @@ public class StatisticsDAOImpl implements StatisticsDAO {
         readStatistics();
     }
 
+    public float getStatistics(String name){
+        return map.get(name);
+    }
 
     @Override
     public void readStatistics() {
@@ -82,6 +85,7 @@ public class StatisticsDAOImpl implements StatisticsDAO {
         map.put(choices[11],map.get(choices[11])+1);
         map.put("Sales",map.get("Sales")+Float.parseFloat(choices[12]));
         map.put(choices[13],map.get(choices[13])+1);
+        map.put("Total",map.get("Total")+1);
     }
 }
 

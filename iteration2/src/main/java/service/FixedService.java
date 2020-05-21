@@ -32,7 +32,7 @@ public class FixedService {
 
     public float getPrice(String name){
        PriceDAO dao =new PriceDAOImpl();
-       return dao.getPrices(name);
+       return dao.getPrices(name);  
     }
 
    public void setSoupChoice(String soupChoice) {

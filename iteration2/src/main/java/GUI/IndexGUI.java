@@ -16,6 +16,7 @@ public class IndexGUI {
     private JLabel welcomeLabel;
     private JLabel toLabel;
     private JLabel restaurantLabel;
+    private JButton managementButton;
 
 
     public IndexGUI() {
@@ -25,6 +26,14 @@ public class IndexGUI {
                 super.mouseClicked(e);
                 frame.dispose();
                 GUI.FixedGUI.main(null);
+            }
+        });
+        managementButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                frame.dispose();
+                GUI.ManagementLogInGUI.main(null);
             }
         });
     }
